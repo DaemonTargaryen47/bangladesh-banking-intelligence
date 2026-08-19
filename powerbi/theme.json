@@ -1,0 +1,16 @@
+{
+  "name": "Bangladesh Banking Intelligence",
+  "dataColors": [
+    "#0B6E4F",
+    "#1F4E78",
+    "#D4A72C",
+    "#6B7280",
+    "#B45309",
+    "#7C3AED",
+    "#0E7490",
+    "#9F1239"
+  ],
+  "background": "#F7F8FA",
+  "foreground": "#1F2937",
+  "tableAccent": "#0B6E4F"
+}

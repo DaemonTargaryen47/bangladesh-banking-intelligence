@@ -1,0 +1,51 @@
+-- Core KPI measures (table name: bank_financials_enriched)
+
+Total Assets = SUM(bank_financials_enriched[total_assets_crore])
+Total Deposits = SUM(bank_financials_enriched[deposits_crore])
+Total Loans = SUM(bank_financials_enriched[loans_crore])
+Net Profit = SUM(bank_financials_enriched[net_profit_crore])
+
+Average NPL % = AVERAGE(bank_financials_enriched[npl_ratio_pct])
+Average ROA % = AVERAGE(bank_financials_enriched[roa_pct])
+Average ROE % = AVERAGE(bank_financials_enriched[roe_pct])
+Average CAR % = AVERAGE(bank_financials_enriched[capital_adequacy_pct])
+Average Cost-to-Income % = AVERAGE(bank_financials_enriched[cost_to_income_pct])
+Average LDR % = AVERAGE(bank_financials_enriched[loan_to_deposit_pct])
+Average CASA % = AVERAGE(bank_financials_enriched[casa_ratio_pct])
+
+Digital Users = SUM(bank_financials_enriched[digital_users])
+Branches = SUM(bank_financials_enriched[branches])
+
+Asset Growth % =
+VAR CurrentYear = MAX(bank_financials_enriched[year])
+VAR PrevAssets =
+    CALCULATE(
+        [Total Assets],
+        FILTER(
+            ALL(bank_financials_enriched[year]),
+            bank_financials_enriched[year] = CurrentYear - 1
+        )
+    )
+RETURN DIVIDE([Total Assets] - PrevAssets, PrevAssets)
+
+Profit Growth % =
+VAR CurrentYear = MAX(bank_financials_enriched[year])
+VAR PrevProfit =
+    CALCULATE(
+        [Net Profit],
+        FILTER(
+            ALL(bank_financials_enriched[year]),
+            bank_financials_enriched[year] = CurrentYear - 1
+        )
+    )
+RETURN DIVIDE([Net Profit] - PrevProfit, PrevProfit)
+
+Risk Flag =
+SWITCH(
+    TRUE(),
+    [Average NPL %] >= 8, "Critical",
+    [Average NPL %] >= 6, "Watch",
+    "Healthy"
+)
+
+Performance Score = AVERAGE(bank_financials_enriched[performance_score])

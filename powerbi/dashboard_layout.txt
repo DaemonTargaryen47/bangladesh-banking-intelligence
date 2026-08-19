@@ -1,0 +1,43 @@
+POWER BI DASHBOARD BUILD GUIDE
+
+PAGE 1 — EXECUTIVE OVERVIEW
+Top slicers: Year | Bank | Bank Type
+Cards: Total Assets | Total Deposits | Total Loans | Net Profit | Avg NPL % | Avg ROA %
+Visuals:
+1. Line chart: Year vs Total Assets, legend Bank
+2. Clustered bar: Bank vs Net Profit
+3. Scatter: X=NPL %, Y=ROA %, Size=Total Assets, Details=Bank
+4. Matrix: Bank | Assets | Profit | NPL | ROA | ROE | CAR | Cost/Income
+5. KPI text box: 3 management takeaways
+
+PAGE 2 — RISK & ASSET QUALITY
+Cards: Avg NPL % | Avg CAR % | Avg LDR %
+Visuals:
+1. Bar: Bank vs NPL %
+2. Scatter: CAR % vs NPL %, size Loans
+3. Table with conditional formatting for NPL, CAR, LDR
+4. Trend: Year vs Avg NPL %
+
+PAGE 3 — PROFITABILITY & EFFICIENCY
+Cards: Net Profit | Avg ROA | Avg ROE | Avg Cost-to-Income
+Visuals:
+1. Bank vs ROA/ROE
+2. Cost-to-Income ranking
+3. Profit per employee ranking
+4. Profit trend by year
+
+PAGE 4 — DIGITAL & DISTRIBUTION
+Cards: Digital Users | Branches
+Visuals:
+1. Digital users trend by bank
+2. Digital users per branch
+3. CASA ratio by bank
+4. Branch count vs digital users
+
+PAGE 5 — MANAGEMENT RECOMMENDATIONS
+Use dynamic narrative / text cards:
+- Protect asset quality where NPL is rising.
+- Improve operating leverage for high cost-to-income banks.
+- Grow CASA to reduce funding costs.
+- Prioritize digital acquisition while rationalizing branch expansion.
+- Balance loan growth with capital adequacy and liquidity discipline.
