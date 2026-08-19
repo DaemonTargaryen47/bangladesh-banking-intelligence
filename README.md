@@ -64,16 +64,9 @@ pip install -r python/requirements.txt
 python python/eda.py
 ```
 
-## Portfolio framing
-Do not say “I made a dashboard.” Say:
+.
 
-> I built a management intelligence case study that evaluates bank growth, profitability, asset quality, capitalization and operating efficiency, then converts those findings into management actions.
 
-## Suggested GitHub repo name
-`bangladesh-banking-intelligence`
-
-## Suggested resume bullet
-- Built a banking intelligence dashboard using SQL, Python and Power BI to benchmark profitability, asset quality, capital adequacy and operating efficiency, translating KPI trends into management recommendations.
 
 ## Replacing synthetic data with public data
 For a production/academic version, use Bangladesh Bank publications and individual bank annual reports. Keep the same column schema so the SQL, DAX and dashboard structure remain reusable.
