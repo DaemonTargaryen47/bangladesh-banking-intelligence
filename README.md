@@ -1,6 +1,5 @@
 # Bangladesh Banking Intelligence Dashboard
 
-A portfolio-ready **banking performance, risk and management intelligence** case study designed for Data Analyst, Business Analyst, Management Trainee (MTO), Graduate Trainee and banking roles in Bangladesh.
 
 > **Important:** The included bank-level financial data is **synthetic and fictional**, generated to resemble plausible commercial-banking patterns. It is not presented as actual performance data for any real Bangladeshi bank.
 
