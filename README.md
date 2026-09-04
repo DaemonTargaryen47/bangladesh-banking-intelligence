@@ -60,3 +60,146 @@ Combines every signal into a single management priority view.
 ---
 
 ## 🧠 How It Works
+Synthetic Banking Data
+↓
+Data Preparation
+↓
+SQL Analysis
+↓
+Python EDA
+↓
+Power BI Data Model
+↓
+DAX Measures
+↓
+Interactive Dashboard
+↓
+Management Insights
+↓
+Business Recommendations
+
+Raw financials are cleaned and loaded into SQLite, then queried in SQL to surface year-over-year trends, risk flags, and profitability patterns. Python handles exploratory analysis and sanity-checks the data before it enters Power BI, where DAX measures turn raw numbers into performance scores, risk classifications, and growth metrics. The result is an interactive dashboard that doesn't just show what happened to each bank — it flags what management should do about it.
+
+---
+
+## 📈 Key Performance Indicators
+
+| Area              | KPIs                                                |
+| ----------------- | ---------------------------------------------------- |
+| **Scale**         | Total Assets, Deposits, Loans                        |
+| **Profitability** | Net Profit, ROA, ROE                                 |
+| **Risk**          | NPL Ratio, Capital Adequacy, Loan-to-Deposit Ratio   |
+| **Efficiency**    | Cost-to-Income, Profit per Employee                  |
+| **Funding**       | CASA Ratio                                           |
+| **Distribution**  | Branches, Digital Users                              |
+| **Growth**        | YoY Asset, Profit, Branch & Digital User Growth      |
+| **Management**    | Performance Score, Risk Status, Management Priority  |
+
+---
+
+## 💡 Management Insights Baked Into the Model
+
+- Rapid loan growth is only evaluated alongside NPL trends and capital adequacy.
+- Higher profitability is weighted against operating efficiency, not viewed in isolation.
+- A rising cost-to-income ratio flags automation/cost-optimization opportunities.
+- Strong CASA ratios signal a healthier low-cost funding base.
+- Digital growth outpacing branch growth signals distribution scalability.
+- Growth is never treated as good news on its own — it's checked against asset quality and capital resilience.
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Layer | Tool |
+|---|---|
+| Visualization | Power BI |
+| Business logic | DAX |
+| Data querying | SQL / SQLite |
+| Data prep & EDA | Python |
+| Supporting analysis | Excel |
+| Versioning | Git & GitHub |
+
+---
+
+## 📂 Project Structure
+Bangladesh_Banking_Intelligence/
+│
+├── data/
+│ ├── raw/bank_financials_synthetic.csv
+│ ├── processed/bank_financials_enriched.csv
+│ └── banking_intelligence.db
+│
+├── docs/
+│ ├── screenshots/
+│ ├── KPI_DICTIONARY.md
+│ ├── BUSINESS_CASE.md
+│ └── INTERVIEW_TALK_TRACK.md
+│
+├── powerbi/
+│ ├── DAX_measures.txt
+│ ├── dashboard_layout.txt
+│ └── theme.json
+│
+├── python/
+│ ├── eda.py
+│ └── requirements.txt
+│
+├── sql/
+│ └── analysis_queries.sql
+│
+├── Bangladesh_Banking_Intelligence.pbix
+├── Bangladesh_Banking_Intelligence_Dashboard.xlsx
+├── README.md
+└── LICENSE
+
+---
+
+## 🗄️ SQL Analysis
+
+Covers latest-year performance, YoY asset growth, profitability vs. risk, high-NPL banks, digital adoption growth, operating efficiency, and portfolio trends.
+SQLite database: `data/banking_intelligence.db`
+
+---
+
+## 🐍 Run the Python Analysis
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r python/requirements.txt
+python python/eda.py
+```
+
+---
+
+## 📊 Power BI Report
+
+Five interactive pages — Executive Overview, Risk & Asset Quality, Profitability & Efficiency, Digital & Distribution, and Management Insights & Recommendations — with filters for year, bank, and bank type.
+
+---
+
+## ⚠️ Data Disclaimer
+
+This is a **portfolio case study**. All figures, scores, and classifications are based on a **synthetic dataset** built for analytical demonstration — not official Bangladesh Bank data or real institutional assessments.
+
+---
+
+## 🔄 Future Development
+
+The data model is built to be reusable: real financial data from Bangladesh Bank or individual bank annual reports can drop into the existing SQL, DAX, and Power BI framework with minimal rework.
+
+---
+
+## 👤 About the Author
+
+**Chowdhury Aseer Ruthbah** — Computer Science undergraduate focused on data analytics, business intelligence, and data-driven decision making. Built this to practice turning raw financial data into decisions a bank's management team could actually act on.
+
+[GitHub](https://github.com/DaemonTargaryen47) • [LinkedIn](https://www.linkedin.com/in/chowdhury-aseer-ruthbah-0a9ba9275)
+
+---
+
+<div align="center">
+
+⭐ **If this was useful or interesting, a star helps a lot.**
+
+</div>
