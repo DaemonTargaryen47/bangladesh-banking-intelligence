@@ -1,253 +1,62 @@
-# Bangladesh Banking Intelligence Dashboard
+<div align="center">
 
-A banking analytics and management intelligence project built with **Power BI, SQL, Python, DAX, and Excel** to analyze bank performance across profitability, asset quality, capital strength, operating efficiency, and digital transformation.
+# 🏦 Bangladesh Banking Intelligence
 
+**Which bank looks profitable on paper — but is quietly taking on too much risk?**
 
+A Power BI + SQL + Python analytics project that scores Bangladeshi banks across profitability, risk, efficiency, and digital adoption — and turns the numbers into management-level recommendations.
+
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=sqlite&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-yellow?style=flat)
+![License](https://img.shields.io/github/license/DaemonTargaryen47/bangladesh-banking-intelligence)
+![Last Commit](https://img.shields.io/github/last-commit/DaemonTargaryen47/bangladesh-banking-intelligence)
+
+**[⭐ View Live Dashboard Walkthrough](#-dashboard-preview)** • **[📊 KPI Dictionary](docs/KPI_DICTIONARY.md)** • **[💼 Business Case](docs/BUSINESS_CASE.md)**
+
+</div>
+
+---
+
+<!-- Insert a banner image or GIF here: wide screenshot montage or a click-through demo -->
+<!-- e.g. ![Demo](docs/screenshots/demo.gif) -->
+
+## 🎯 The Problem
+
+Bank financials are noisy. A bank can look strong on profit growth while its NPL ratio is quietly climbing, or scale digital users fast while its branch network overextends. Raw financial statements don't surface this — you need to see profitability, risk, efficiency, and funding **side by side** to catch it.
+
+This project builds that view: a 5-page interactive Power BI dashboard that turns raw bank financials into a **performance score, risk status, and management priority** for each bank, year over year.
 
 ---
 
 ## 📊 Dashboard Preview
 
 ### 1. Executive Overview
+High-level view of assets, deposits, loans, profitability, NPL ratios, and bank-to-bank comparisons.
 
-Provides a high-level view of banking performance, including assets, deposits, loans, profitability, NPL ratios, and overall bank comparisons.
-
-![Executive Overview](docs/screenshots/01_executive_overview.PNG)
+![Executive Overview](https://github.com/DaemonTargaryen47/bangladesh-banking-intelligence/raw/main/docs/screenshots/01_executive_overview.PNG)
 
 ### 2. Risk & Asset Quality
+Credit risk and financial stability via NPL ratios, capital adequacy, loan-to-deposit ratios, and risk positioning.
 
-Examines credit risk and financial stability through NPL ratios, capital adequacy, loan-to-deposit ratios, and bank-level risk positioning.
-
-![Risk & Asset Quality](docs/screenshots/02_risk_asset_quality.PNG)
+![Risk & Asset Quality](https://github.com/DaemonTargaryen47/bangladesh-banking-intelligence/raw/main/docs/screenshots/02_risk_asset_quality.PNG)
 
 ### 3. Profitability & Efficiency
+Net profit, ROA, ROE, cost-to-income ratios, profit growth, and employee productivity.
 
-Compares profitability and operational performance using net profit, ROA, ROE, cost-to-income ratios, profit growth, and employee productivity.
-
-![Profitability & Efficiency](docs/screenshots/03_profitability_efficiency.PNG)
+![Profitability & Efficiency](https://github.com/DaemonTargaryen47/bangladesh-banking-intelligence/raw/main/docs/screenshots/03_profitability_efficiency.PNG)
 
 ### 4. Digital & Distribution
+Digital adoption, branch networks, CASA ratios, and distribution efficiency.
 
-Analyzes digital customer adoption, branch networks, CASA ratios, digital growth, and distribution efficiency.
-
-![Digital & Distribution](docs/screenshots/04_digital_distribution.PNG)
+![Digital & Distribution](https://github.com/DaemonTargaryen47/bangladesh-banking-intelligence/raw/main/docs/screenshots/04_digital_distribution.PNG)
 
 ### 5. Management Insights & Recommendations
+Combines every signal into a single management priority view.
 
-Transforms analytical findings into management priorities by combining performance, risk, profitability, efficiency, and digital indicators.
-
-![Management Insights & Recommendations](docs/screenshots/05_management_insights.PNG)
-
----
-
-## 🎯 Business Objective
-
-The goal of this project is to answer management-level questions such as:
-
-- Which banks demonstrate the strongest overall performance?
-- Which banks show elevated asset-quality or credit risk?
-- How do profitability and operating efficiency compare across banks?
-- Are banks scaling digital channels faster than physical distribution?
-- Which banks have stronger low-cost funding positions?
-- What management actions should follow from the observed KPI trends?
-
-The project focuses not only on **what happened**, but also on **why it matters and what management should do next**.
+![Management Insights](https://github.com/DaemonTargaryen47/bangladesh-banking-intelligence/raw/main/docs/screenshots/05_management_insights.PNG)
 
 ---
 
-## 📈 Key Performance Indicators
-
-| Area | KPIs |
-|---|---|
-| **Scale** | Total Assets, Deposits, Loans |
-| **Profitability** | Net Profit, ROA, ROE |
-| **Risk** | NPL Ratio, Capital Adequacy, Loan-to-Deposit Ratio |
-| **Efficiency** | Cost-to-Income, Profit per Employee |
-| **Funding** | CASA Ratio |
-| **Distribution** | Branches, Digital Users |
-| **Growth** | YoY Asset, Profit, Branch & Digital User Growth |
-| **Management** | Performance Score, Risk Status, Management Priority |
-
----
-
-## 💡 Management Insights
-
-The dashboard is designed around several management principles:
-
-- Rapid loan growth should be evaluated alongside **NPL trends and capital adequacy**.
-- Higher profitability is more attractive when accompanied by **strong operating efficiency**.
-- A rising cost-to-income ratio may indicate opportunities for **automation and cost optimization**.
-- Strong CASA ratios can indicate a healthier **low-cost funding base**.
-- Digital customer growth exceeding branch expansion may indicate improved **distribution scalability**.
-- Strong financial growth should not come at the expense of **asset quality or capital resilience**.
-
----
-
-## 🛠️ Tools & Technologies
-
-- **Power BI** — Dashboard development and interactive visualization
-- **DAX** — KPI measures, growth calculations, classifications, and decision logic
-- **SQL / SQLite** — Banking analysis and window-function queries
-- **Python** — Data preparation and exploratory analysis
-- **Excel** — Supporting analytical dashboard
-- **Git & GitHub** — Version control and project documentation
-
----
-
-## 📂 Project Structure
-
-```text
-Bangladesh_Banking_Intelligence/
-│
-├── data/
-│   ├── raw/
-│   │   └── bank_financials_synthetic.csv
-│   ├── processed/
-│   │   └── bank_financials_enriched.csv
-│   └── banking_intelligence.db
-│
-├── docs/
-│   ├── screenshots/
-│   │   ├── 01_executive_overview.PNG
-│   │   ├── 02_risk_asset_quality.PNG
-│   │   ├── 03_profitability_efficiency.PNG
-│   │   ├── 04_digital_distribution.PNG
-│   │   └── 05_management_insights.PNG
-│   ├── KPI_DICTIONARY.md
-│   ├── BUSINESS_CASE.md
-│   └── INTERVIEW_TALK_TRACK.md
-│
-├── powerbi/
-│   ├── DAX_measures.txt
-│   ├── dashboard_layout.txt
-│   └── theme.json
-│
-├── python/
-│   ├── eda.py
-│   └── requirements.txt
-│
-├── sql/
-│   └── analysis_queries.sql
-│
-├── Bangladesh_Banking_Intelligence.pbix
-├── Bangladesh_Banking_Intelligence_Dashboard.xlsx
-├── README.md
-└── LICENSE
-```
-
----
-
-## 🧠 Analytical Workflow
-
-```text
-Synthetic Banking Data
-        ↓
-Data Preparation
-        ↓
-SQL Analysis
-        ↓
-Python EDA
-        ↓
-Power BI Data Model
-        ↓
-DAX Measures
-        ↓
-Interactive Dashboard
-        ↓
-Management Insights
-        ↓
-Business Recommendations
-```
-
----
-
-## 🗄️ SQL Analysis
-
-The SQL component includes analysis of:
-
-- Latest-year bank performance
-- Year-over-year asset growth
-- Profitability vs risk
-- High-NPL banks
-- Digital adoption growth
-- Operating efficiency
-- Banking portfolio trends
-
-Queries are available in:
-
-```text
-sql/analysis_queries.sql
-```
-
-The SQLite database is available at:
-
-```text
-data/banking_intelligence.db
-```
-
----
-
-## 🐍 Python Analysis
-
-The Python component performs exploratory analysis and generates supporting visualizations.
-
-To run:
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r python/requirements.txt
-python python/eda.py
-```
-
----
-
-## 📊 Power BI Report
-
-The Power BI report contains five interactive pages:
-
-1. **Executive Overview**
-2. **Risk & Asset Quality**
-3. **Profitability & Efficiency**
-4. **Digital & Distribution**
-5. **Management Insights & Recommendations**
-
-The report includes interactive filters for **year, bank, and bank type**, along with custom DAX measures for growth, profitability, risk, efficiency, digital adoption, and management classifications.
-
-The `.pbix` report is included in the repository:
-
-```text
-Bangladesh_Banking_Intelligence.pbix
-```
-
----
-
-## ⚠️ Data Disclaimer
-
-This project is intended as a **portfolio case study**.
-
-Bank names, financial figures, performance scores, risk classifications, management thresholds, and resulting recommendations are based on a synthetic dataset created for analytical demonstration.
-
-They should **not** be interpreted as official Bangladesh Bank ratings or assessments of real financial institutions.
-
----
-
-## 🔄 Future Development
-
-The analytical model can be extended using public data from **Bangladesh Bank** and individual bank annual reports.
-
-Because the project uses a reusable data structure, real financial data can replace the synthetic dataset while retaining much of the existing SQL, DAX, and Power BI analytical framework.
-
----
-
-## 👤 Author
-
-**Chowdhury Aseer Ruthbah**
-
-Computer Science undergraduate focused on **Data Analytics, Business Intelligence, and data-driven decision making**.
-
-[GitHub](https://github.com/DaemonTargaryen47) • [LinkedIn](https://www.linkedin.com/in/chowdhury-aseer-ruthbah-0a9ba9275)
-
----
-
-⭐ If you found this project useful, feel free to explore the repository and its analytical workflow.
+## 🧠 How It Works
