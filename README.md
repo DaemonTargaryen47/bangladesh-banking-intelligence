@@ -2,7 +2,7 @@
 
 A banking analytics and management intelligence project built with **Power BI, SQL, Python, DAX, and Excel** to analyze bank performance across profitability, asset quality, capital strength, operating efficiency, and digital transformation.
 
-> **Note:** The bank-level financial data used in this project is **synthetic and fictional**, generated to resemble plausible commercial banking patterns. It does not represent the actual performance of any real Bangladeshi bank.
+
 
 ---
 
@@ -246,7 +246,7 @@ Because the project uses a reusable data structure, real financial data can repl
 
 Computer Science undergraduate focused on **Data Analytics, Business Intelligence, and data-driven decision making**.
 
-GitHub: **DaemonTargaryen47**
+[GitHub](https://github.com/DaemonTargaryen47) • [LinkedIn](https://www.linkedin.com/in/chowdhury-aseer-ruthbah-0a9ba9275)
 
 ---
 
